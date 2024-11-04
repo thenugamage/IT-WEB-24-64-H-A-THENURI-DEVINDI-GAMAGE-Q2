@@ -1,0 +1,73 @@
+﻿@page
+@model WebApplicationTest.Pages.AddNewStudentModel
+@{
+}
+
+
+
+@{
+    ViewData["Title"] = "AddNewStudent ";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]- AddNewStudent </title>
+    <link rel="stylesheet" href="~/css/AddNewStudent.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+</head>
+<body>
+
+    <!-- Add New -->
+    <header>
+        <h2 class="customHeader text-center mt-5"> Add New Student Information </h2>
+
+    </header>
+
+    <article>
+
+        <div class="form-container mt-5 d-flex">
+            <form class="row g-3">
+                <div class="col-md-12">
+                    <label for="studentid" class="form-label">Student ID</label>
+                    <input type="number" class="custom-input rounded-pill form-control mt-2 " id="studentid">
+                </div>
+                <div class="col-md-12">
+                    <label for="studentName" class="form-label mt-4 ">Name</label>
+                    <input type="text" class="rounded-pill form-control mt-2" id="studentName">
+                </div>
+                <div class="col-12">
+                    <label for="city" class="form-label mt-4">City</label>
+                    <input type="text" class="rounded-pill form-control mt-2" id="City">
+                </div>
+                <div class="col-md-12">
+                    <label for="courseid" class="form-label">Course ID</label>
+                    <input type="number" class="custom-input rounded-pill form-control mt-2 " id="courseid">
+                </div>
+
+                <div class="col-6">
+                    <button type="reset" class="btn btn-glow btn-gradient btn-primary rounded-pill mt-5">Clear</button>
+                </div>
+                <div class="col-6">
+                    <button type="submit" class="btn btn-glow btn-gradient btn-primary rounded-pill mt-5">Submit</button>
+                </div>
+            </form>
+        </div>
+
+
+    </article>
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+﻿/* Header Gradients and Adjustments */
+.customHeader {
+    background: linear-gradient(to bottom, #ffffff, #4c7fe5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 4.2px !important;
+    font-weight: 800 !important;
+}
+
+.input-field {
+    border: solid 1px #6c85fb; /* Border color */
+    background: linear-gradient(rgba(9, 50, 238, 0.48), rgba(9, 50, 238, 0.48)); /* Linear gradient background */
+    width: 200px; /* Adjust width to your desired size */
+}
+
+.btn-transparent {
+    background-color: transparent !important; /* Ensure button background is transparent */
+    border: none !important; /* Remove any border */
+}
+
+
+
+
+/* Ensure no default button styles */
+.btn-transparent {
+    background-color: transparent !important; /* Transparent background */
+    border: none !important; /* No border */
+    padding: 0; /* Remove padding */
+}
+
+/* Icon container styling */
+.icon-container {
+    display: inline-block; /* To allow transformations */
+    transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+
+    /* Hover effect for the icon */
+    .icon-container:hover {
+        transform: translateX(5px); /* Slide forward effect */
+    }
+
+/* Optional: Prevent button's background effect on hover */
+.btn-transparent:hover {
+    background-color: transparent !important; /* Ensure button remains transparent on hover */
+}
+
+.container2{
+    color:white;
+}
+
+label{
+    border:1px solid white;
+    border-radius:3px;
+    width:100%;
+}
+
+.custom-input {
+    background-color: transparent !important;
+}
+.custem-lable {
+    border: 2px solid #4c7fe5 !important;
+}
+.custom-input2 {
+    border: 2px solid #4c7fe5 !important;
+    width: 100%;
+}

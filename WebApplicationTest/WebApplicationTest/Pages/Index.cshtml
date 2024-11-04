@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]- Home </title>
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+
+</head>
+
+<body>
+        <h1 class="display-4 main-tit text-center m-5">Student Management System</h1>
+
+
+
+    <div class="d-flex flex-column justify-content-center align-items-center m-5 display-3">
+        <div class="p-2">
+            <form asp-area="" asp-page="/Index" class="d-inline">
+                <button type="submit" class="btn d-flex justify-content-center align-items-center rounded-pill p-md-5 p-4 w-auto text-nowrap fs-3 m-2">
+                    Home
+                </button>
+            </form>
+        </div>
+        <div class="p-2">
+            <form asp-area="" asp-page="/StudentInfo" class="d-inline">
+                <button type="submit" class="btn d-flex justify-content-center align-items-center rounded-pill p-md-5 p-4 w-auto text-nowrap fs-3 m-2">
+                    Student Information
+                </button>
+            </form>
+        </div>
+        <div class="p-2">
+            <form asp-area="" asp-page="/AddNewStudent" class="d-inline">
+                <button type="submit" class="btn d-flex justify-content-center align-items-center rounded-pill p-md-5 p-4 w-auto text-nowrap fs-3 m-2">
+                    Add New Student Information
+                </button>
+            </form>
+        </div>
+        <div class="p-2">
+            <form asp-area="" asp-page="/AddNewCourse" class="d-inline">
+                <button type="submit" class="btn d-flex justify-content-center align-items-center rounded-pill p-md-5 p-4 w-auto text-nowrap fs-3 m-2">
+                    Add New Course Information
+                </button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿.main-tit {
+    background: linear-gradient(to bottom, #ffffff, #4c7fe5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 4.2px !important;
+    font-weight: 700 !important;
+}
+
+.btn-link {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: dimgrey;
+    color: #0d6efd;
+    font-weight: 700;
+    }
+
+button {
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    width:fit-content;
+    color:white !important;
+    font-size:xx-large;
+
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 16px 0px #6c85fb !important;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    background: linear-gradient(160deg, #031884, transparent); /* Gradient effect */
+    width: 163.2px; /* Set button width */
+    height: 50.588px; /* Set button height */
+}
+
+header{
+    display:none;
+}

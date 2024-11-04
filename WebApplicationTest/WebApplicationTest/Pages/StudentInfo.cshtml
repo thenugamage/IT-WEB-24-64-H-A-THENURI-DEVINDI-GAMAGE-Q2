@@ -1,0 +1,136 @@
+﻿@page
+@model WebApplicationTest.Pages.StudentInfoModel
+@{
+}
+
+@{
+    ViewData["Title"] = "StudentInfo";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]- StudentInfo </title>
+    <link rel="stylesheet" href="~/css/StudentInfo.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" asp-append-version="true">
+</head>
+<body>
+
+    <!-- Add New -->
+    <header>
+        <h2 class="customHeader text-center my-5"> Student Information </h2>
+    </header>
+
+
+    <article>
+        <form>
+            <div class="row g-3 justify-content-center align-items-center my-5">
+                <div class="col-auto">
+                    <input type="number" class="form-control input-field rounded-pill" placeholder="Enter the Student ID" aria-label="enterstid">
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn-transparent">
+                        <span class="icon-container">
+                            <svg width="50" height="50" xmlns="http://www.w3.org/2000/svg" viewBox="1201 -858 88 81" fill="none" version="1.1">
+                                <g style="fill:#000000" width="32" height="32" rx="0" ry="0">
+                                    <g>
+                                        <path d="M1245.000,-850.406C1225.256,-850.406,1209.250,-835.674,1209.250,-817.500C1209.250,-799.326,1225.256,-784.594,1245.000,-784.594C1264.744,-784.594,1280.750,-799.326,1280.750,-817.500C1280.729,-835.666,1264.736,-850.387,1245.000,-850.406ZZM1245.000,-789.656C1228.293,-789.656,1214.750,-802.122,1214.750,-817.500C1214.750,-832.878,1228.293,-845.344,1245.000,-845.344C1261.707,-845.344,1275.250,-832.878,1275.250,-817.500C1275.231,-802.130,1261.699,-789.674,1245.000,-789.656ZZM1260.696,-819.291C1261.212,-818.816,1261.502,-818.172,1261.502,-817.500C1261.502,-816.828,1261.212,-816.184,1260.696,-815.709L1249.696,-805.584C1248.621,-804.595,1246.879,-804.595,1245.804,-805.584C1244.730,-806.573,1244.730,-808.177,1245.804,-809.166L1252.112,-814.969L1231.250,-814.969C1229.731,-814.969,1228.500,-816.102,1228.500,-817.500C1228.500,-818.898,1229.731,-820.031,1231.250,-820.031L1252.112,-820.031L1245.804,-825.834C1244.730,-826.823,1244.730,-828.427,1245.804,-829.416C1246.879,-830.405,1248.621,-830.405,1249.696,-829.416Z" style="fill:#4c7fe5;fill-opacity:1"></path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <form>
+            <div class="container text-center my-5 container2">
+                <div class="row">
+                    <div class="col">
+                        <label for="studentid" class="form-label">Student ID</label>
+                    </div>
+                    <div class="col">
+                        <label for="studentName" class="form-label">Name</label>
+                    </div>
+                    <div class="col">
+                        <label for="city" class="form-label">City</label>
+                    </div>
+                    <div class="col">
+                        <label for="courseid" class="form-label">Course ID</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="number" class="custom-input form-control mt-2 " id="studentid">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="custom-input form-control mt-2" id="studentName">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="custom-input form-control mt-2" id="City">
+                    </div>
+                    <div class="col">
+                        <input type="number" class="custom-input form-control mt-2 " id="courseid">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+
+        <h2 class="customHeader text-center my-5"> Student Details & Related Courses </h2>
+
+        <form>
+            <div class="container text-center my-5 container2">
+                <div class="row">
+                    <div class="col">
+                        <label for="studentid" class="custem-lable form-label">Student ID</label>
+                    </div>
+                    <div class="col">
+                        <label for="studentName" class="custem-lable form-label">Name</label>
+                    </div>
+                    <div class="col">
+                        <label for="city" class="custem-lable form-label">City</label>
+                    </div>
+                    <div class="col">
+                        <label for="courseid" class="custem-lable form-label">Course ID</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input type="number" class="custom-input2 form-control mt-2 " id="studentid">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="custom-input2 form-control mt-2" id="studentName">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="custom-input2 form-control mt-2" id="City">
+                    </div>
+                    <div class="col">
+                        <input type="number" class="custom-input2 form-control mt-2 " id="courseid">
+                    </div>
+                </div>
+            </div>
+
+        </form>
+        
+
+    </article>
+
+
+
+
+
+
+
+
+
+ 
+
+    
+</body>
+</html>

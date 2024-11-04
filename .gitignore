@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/WebApplicationTest/.vs/WebApplicationTest
+/WebApplicationTest/WebApplicationTest/bin/Debug/net8.0
+/.vs/shehara/v17
+/.vs/WebApp/v17
+/.vs/Project/v17
+/.vs/TestWebApp/v17
+/.vs
